@@ -1,0 +1,27 @@
+{
+  "name": "pagarme-node",
+  "version": "0.0.1",
+  "description": "PagarMe's Node API",
+  "main": "lib/pagarme.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ferodss/pagarme-node"
+  },
+  "author": "Felipe Rodrigues - @ferodss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ferodss/pagarme-node/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "jasmine-node": "~1.x"
+  },
+  "dependencies": {
+      "request": "~2.x"
+  }
+}
