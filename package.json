@@ -4,7 +4,7 @@
   "description": "PagarMe's Node API",
   "main": "lib/pagarme.js",
   "scripts": {
-    "test": "./node_modules/.bin/jasmine-node test"
+    "test": "./node_modules/.bin/jasmine-node test --verbose"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,6 @@
     "jasmine-node": "~1.x"
   },
   "dependencies": {
-      "request": "~2.x"
+    "request": "~2.x"
   }
 }
