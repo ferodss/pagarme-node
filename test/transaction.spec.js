@@ -71,7 +71,7 @@ describe('PagarMe::Transaction', function() {
 
                 done();
             });
-        }, 500);
+        });
     });
 
 });
