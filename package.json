@@ -22,6 +22,7 @@
     "jasmine-node": "~1.x"
   },
   "dependencies": {
-    "request": "~2.x"
+    "request": "~2.x",
+    "merge": "~1.x"
   }
 }
