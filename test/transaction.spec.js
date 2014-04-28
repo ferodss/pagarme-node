@@ -45,7 +45,7 @@ describe('PagarMe::Transaction', function() {
             expect(transaction.id).not.toBeNull();
             expect(transaction.status).toBe('paid');
             expect(transaction.refuse_reason).toBeNull();
-            expect(transaction.dateCreated).not.toBeNull();               
+            expect(transaction.date_created).not.toBeNull();               
 
             done();
         });
@@ -60,6 +60,18 @@ describe('PagarMe::Transaction', function() {
 
             done();
         });
+    });
+
+    it('should be able to refund', function(done) {
+        var transaction = new PagarMe.Transaction(params);
+
+        transaction.charge(function() {
+            transaction.refund(function() {
+                expect(transaction.status).toBe('refunded');
+
+                done();
+            });
+        }, 500);
     });
 
 });
